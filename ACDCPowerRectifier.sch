@@ -1,0 +1,392 @@
+EESchema Schematic File Version 4
+LIBS:ACDCPowerRectifier-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "AC-DC Power Converter for Standard Use"
+Date "2016-12-15"
+Rev "1.0"
+Comp "INCOM"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ACDCPowerRectifier-rescue:Diode_Bridge D1
+U 1 1 58520801
+P 5750 3000
+F 0 "D1" V 6100 3300 50  0000 C CNN
+F 1 "10A" V 6100 2650 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_Bridge_18.5x5.5" H 5750 3000 50  0001 C CNN
+F 3 "" H 5750 3000 50  0000 C CNN
+	1    5750 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5852097B
+P 6700 2700
+F 0 "C1" H 6725 2800 50  0000 L CNN
+F 1 "1000uF" H 6725 2600 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D35_L51_P10" H 6738 2550 50  0001 C CNN
+F 3 "" H 6700 2700 50  0000 C CNN
+	1    6700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 585209D2
+P 6700 3350
+F 0 "C2" H 6725 3450 50  0000 L CNN
+F 1 "1000uF" H 6725 3250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D35_L51_P10" H 6738 3200 50  0001 C CNN
+F 3 "" H 6700 3350 50  0000 C CNN
+	1    6700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 58520A69
+P 7150 2700
+F 0 "C3" H 7175 2800 50  0000 L CNN
+F 1 "1000uF" H 7175 2600 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D35_L51_P10" H 7188 2550 50  0001 C CNN
+F 3 "" H 7150 2700 50  0000 C CNN
+	1    7150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 58520A95
+P 7600 2700
+F 0 "C5" H 7625 2800 50  0000 L CNN
+F 1 "1000uF" H 7625 2600 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D35_L51_P10" H 7638 2550 50  0001 C CNN
+F 3 "" H 7600 2700 50  0000 C CNN
+	1    7600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 58520AC2
+P 7150 3350
+F 0 "C4" H 7175 3450 50  0000 L CNN
+F 1 "1000uF" H 7175 3250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D35_L51_P10" H 7188 3200 50  0001 C CNN
+F 3 "" H 7150 3350 50  0000 C CNN
+	1    7150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 58520AEC
+P 7600 3350
+F 0 "C6" H 7625 3450 50  0000 L CNN
+F 1 "1000uF" H 7625 3250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D35_L51_P10" H 7638 3200 50  0001 C CNN
+F 3 "" H 7600 3350 50  0000 C CNN
+	1    7600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ACDCPowerRectifier-rescue:MOC3020M U1
+U 1 1 58520BF4
+P 4150 2200
+F 0 "U1" H 3940 2390 50  0000 L CNN
+F 1 "MOC3020M" H 4150 2400 50  0000 L CNN
+F 2 "Housings_DIP:DIP-6_W7.62mm_LongPads" H 3950 2000 50  0001 L CIN
+F 3 "" H 4125 2200 50  0000 L CNN
+	1    4150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerModules:BT139-800 U2
+U 1 1 5852133D
+P 4950 2800
+F 0 "U2" V 4700 2950 50  0000 C CNN
+F 1 "BT139-800" V 5050 2800 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 4950 2800 50  0001 C CNN
+F 3 "" H 4950 2800 50  0000 C CNN
+	1    4950 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L ACDCPowerRectifier-rescue:CONN_01X01 P4
+U 1 1 58522783
+P 8450 2250
+F 0 "P4" H 8450 2350 50  0000 C CNN
+F 1 "DCPOS" V 8550 2250 50  0000 C CNN
+F 2 "Connect:Banana_Jack_1Pin" H 8450 2250 50  0001 C CNN
+F 3 "" H 8450 2250 50  0000 C CNN
+	1    8450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ACDCPowerRectifier-rescue:CONN_01X01 P5
+U 1 1 585227FF
+P 8450 3900
+F 0 "P5" H 8450 4000 50  0000 C CNN
+F 1 "DCNEG" V 8550 3900 50  0000 C CNN
+F 2 "Connect:Banana_Jack_1Pin" H 8450 3900 50  0001 C CNN
+F 3 "" H 8450 3900 50  0000 C CNN
+	1    8450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 58522E84
+P 4950 3000
+F 0 "R3" V 5030 3000 50  0000 C CNN
+F 1 "10" V 4950 3000 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 4880 3000 50  0001 C CNN
+F 3 "" H 4950 3000 50  0000 C CNN
+	1    4950 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 58524B85
+P 4950 2100
+F 0 "R2" V 5030 2100 50  0000 C CNN
+F 1 "180" V 4950 2100 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4880 2100 50  0001 C CNN
+F 3 "" H 4950 2100 50  0000 C CNN
+	1    4950 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5852540A
+P 3550 2100
+F 0 "R1" V 3630 2100 50  0000 C CNN
+F 1 "180" V 3550 2100 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3480 2100 50  0001 C CNN
+F 3 "" H 3550 2100 50  0000 C CNN
+	1    3550 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L ACDCPowerRectifier-rescue:CONN_01X02 P1
+U 1 1 58525580
+P 3050 2200
+F 0 "P1" H 3050 2350 50  0000 C CNN
+F 1 "INPUT" V 3150 2200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02" H 3050 2200 50  0001 C CNN
+F 3 "" H 3050 2200 50  0000 C CNN
+	1    3050 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 585258E9
+P 3550 2350
+F 0 "#PWR01" H 3550 2100 50  0001 C CNN
+F 1 "GND" H 3550 2200 50  0000 C CNN
+F 2 "" H 3550 2350 50  0000 C CNN
+F 3 "" H 3550 2350 50  0000 C CNN
+	1    3550 2350
+	1    0    0    -1  
+$EndComp
+Text Notes 2550 950  0    197  ~ 39
+AC-DC Standard Full Bridge Rectifier System
+$Comp
+L Device:R R4
+U 1 1 5852B3A7
+P 8100 2700
+F 0 "R4" V 8180 2700 50  0000 C CNN
+F 1 "100k" V 8100 2700 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8030 2700 50  0001 C CNN
+F 3 "" H 8100 2700 50  0000 C CNN
+	1    8100 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5852B433
+P 8100 3350
+F 0 "R5" V 8180 3350 50  0000 C CNN
+F 1 "100k" V 8100 3350 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8030 3350 50  0001 C CNN
+F 3 "" H 8100 3350 50  0000 C CNN
+	1    8100 3350
+	-1   0    0    1   
+$EndComp
+Text Notes 550  7650 0    118  ~ 0
+* All output capacitors should be electrolytic of 1000uF@250V
+Text Notes 550  7400 0    118  ~ 0
+* All resistors should be 1/2 EXCEPT the INRUSH LIMITER (R3) 5W
+Text Notes 550  7150 0    118  ~ 0
+* The P1 connector will be connected to an 5V based microcontroller
+Wire Wire Line
+	4550 3650 6300 3650
+Wire Wire Line
+	6300 3650 6300 3000
+Wire Wire Line
+	6300 3000 6150 3000
+Wire Wire Line
+	5750 3400 5750 3900
+Wire Wire Line
+	6700 3500 6700 3900
+Wire Wire Line
+	6700 2850 6700 2950
+Wire Wire Line
+	5750 2250 6700 2250
+Wire Wire Line
+	7150 2250 7150 2550
+Wire Wire Line
+	7600 2250 7600 2550
+Connection ~ 7150 2250
+Wire Wire Line
+	7150 2850 7150 3050
+Wire Wire Line
+	7600 2850 7600 3150
+Wire Wire Line
+	7150 3500 7150 3900
+Wire Wire Line
+	7600 3500 7600 3900
+Wire Wire Line
+	5750 3900 6700 3900
+Connection ~ 6700 3900
+Connection ~ 7150 3900
+Connection ~ 7600 2250
+Connection ~ 7600 3900
+Wire Wire Line
+	5750 2250 5750 2600
+Wire Wire Line
+	6700 2550 6700 2250
+Connection ~ 6700 2250
+Wire Wire Line
+	5200 2700 5250 2700
+Wire Wire Line
+	5250 2100 5250 2700
+Wire Wire Line
+	5100 3000 5250 3000
+Connection ~ 5250 3000
+Wire Wire Line
+	4550 3000 4650 3000
+Wire Wire Line
+	4650 2700 4700 2700
+Connection ~ 4650 3000
+Wire Wire Line
+	4450 2300 4800 2300
+Wire Wire Line
+	4800 2100 4450 2100
+Wire Wire Line
+	5100 2100 5250 2100
+Connection ~ 5250 2700
+Wire Wire Line
+	4650 2700 4650 3000
+Wire Wire Line
+	4800 2300 4800 2400
+Wire Wire Line
+	3700 2100 3850 2100
+Wire Wire Line
+	3250 2150 3300 2150
+Wire Wire Line
+	3300 2150 3300 2100
+Wire Wire Line
+	3300 2100 3400 2100
+Wire Wire Line
+	3250 2250 3300 2250
+Wire Wire Line
+	3300 2250 3300 2300
+Wire Wire Line
+	3300 2300 3550 2300
+Wire Wire Line
+	3550 2350 3550 2300
+Connection ~ 3550 2300
+Wire Wire Line
+	8100 2550 8100 2250
+Connection ~ 8100 2250
+Wire Wire Line
+	8100 2850 8100 2950
+Wire Wire Line
+	8100 3500 8100 3900
+Connection ~ 8100 3900
+Wire Wire Line
+	6700 2950 8100 2950
+Connection ~ 8100 2950
+Connection ~ 6700 2950
+Wire Wire Line
+	7150 3050 8100 3050
+Connection ~ 8100 3050
+Connection ~ 7150 3050
+Wire Wire Line
+	7600 3150 8100 3150
+Connection ~ 8100 3150
+Connection ~ 7600 3150
+$Comp
+L ACDCPowerRectifier-rescue:CONN_01X01 P3
+U 1 1 58520FC3
+P 4350 3650
+F 0 "P3" H 4350 3750 50  0000 C CNN
+F 1 "AC2" V 4450 3650 50  0000 C CNN
+F 2 "Connect:Banana_Jack_1Pin" H 4350 3650 50  0001 C CNN
+F 3 "" H 4350 3650 50  0000 C CNN
+	1    4350 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L ACDCPowerRectifier-rescue:CONN_01X01 P2
+U 1 1 58520EE0
+P 4350 3000
+F 0 "P2" H 4350 3100 50  0000 C CNN
+F 1 "AC1" V 4450 3000 50  0000 C CNN
+F 2 "Connect:Banana_Jack_1Pin" H 4350 3000 50  0001 C CNN
+F 3 "" H 4350 3000 50  0000 C CNN
+	1    4350 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L ACDCPowerRectifier-rescue:CONN_01X01 P6
+U 1 1 585322AD
+P 8450 3050
+F 0 "P6" H 8450 3150 50  0000 C CNN
+F 1 "DCCT" V 8550 3050 50  0000 C CNN
+F 2 "Connect:Banana_Jack_1Pin" H 8450 3050 50  0001 C CNN
+F 3 "" H 8450 3050 50  0000 C CNN
+	1    8450 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2250 7600 2250
+Wire Wire Line
+	6700 3900 7150 3900
+Wire Wire Line
+	7150 3900 7600 3900
+Wire Wire Line
+	7600 2250 8100 2250
+Wire Wire Line
+	7600 3900 8100 3900
+Wire Wire Line
+	6700 2250 7150 2250
+Wire Wire Line
+	5250 3000 5350 3000
+Wire Wire Line
+	4650 3000 4800 3000
+Wire Wire Line
+	5250 2700 5250 3000
+Wire Wire Line
+	3550 2300 3850 2300
+Wire Wire Line
+	8100 2250 8250 2250
+Wire Wire Line
+	8100 3900 8250 3900
+Wire Wire Line
+	8100 2950 8100 3050
+Wire Wire Line
+	6700 2950 6700 3200
+Wire Wire Line
+	8100 3050 8250 3050
+Wire Wire Line
+	8100 3050 8100 3150
+Wire Wire Line
+	7150 3050 7150 3200
+Wire Wire Line
+	8100 3150 8100 3200
+Wire Wire Line
+	7600 3150 7600 3200
+$EndSCHEMATC

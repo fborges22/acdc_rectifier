@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ACDCPowerRectifier-rescue)(type Legacy)(uri ${KIPRJMOD}/ACDCPowerRectifier-rescue.lib)(options "")(descr ""))
+  (lib (name PowerModules)(type Legacy)(uri ${KIPRJMOD}/PowerModules.lib)(options "")(descr ""))
+)
